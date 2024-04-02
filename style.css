@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(to bottom right, #ddffff 25%, #ddffbb 90%) no-repeat fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#header{
+    font-size: 40px;
+    width: 100%;
+    font-weight: 750;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.user{
+    border: 7px solid #333333;
+    outline: 3px solid #dddddd;
+    border-radius: 25px;
+}
+
+input, select{
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type=submit]{
+    background-color: #cccccc;
+    border-radius: 50px;
+}
+
+input[type=submit]:hover{
+    transition: 1s;
+    font-size: 20px;
+}
+
+a{
+    color: #000000;
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+a:hover{
+    color: #555555;
+    font-size: 25px;
+    transition: 1s;
+}
+
+/*
+#editor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+textarea{
+    resize: none;
+    margin-bottom: 10px;
+    min-height: 150px;
+}
+
+#main{
+    width: 350px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px #777777 solid;
+    border-radius: 5px;
+}
+
+#container{
+    display: flex;
+    flex-flow: wrap row;
+    margin: 5px;
+    padding: 5px;
+}
+
+.box{
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #eeccaa;
+    border-radius: 35px;
+    max-width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+th, td, tr, table{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
