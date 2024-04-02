@@ -2,7 +2,7 @@
 
 //Localhost, databasenavn, brukernavn og passord
 $db = "mysql:host=localhost;dbname=sakdb";
-$dbusername = "root";
+$dbusername = "dbadmin";
 $dbpwd = "";
 
 try {
