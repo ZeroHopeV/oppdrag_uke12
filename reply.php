@@ -28,7 +28,7 @@ $comp_stmt->execute();
 
 <a href="overview.php">Se oversikt</a>
 
-<p>Tilgjengelige saker ligger nederst</p>
+<p>Tilgjengelige saker ligger samlet nederst</p>
 
 <?php
 if (isset($_SESSION["admin"]) and $_SESSION["admin"] === true) {
