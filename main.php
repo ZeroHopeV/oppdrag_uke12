@@ -1,5 +1,4 @@
 <?php
-//Henter inn filer for tilkobling og session
 require_once 'data_config/session.php';
 require_once 'data_config/conn.php';
 
@@ -23,13 +22,11 @@ $stmt->execute();
 
 <a href="history.php">Se historikk</a>
 
-<!--Form-knapp for utlogging-->
 <form action="data_config/logout.php" method="post" class="user">
     <input type="submit" name="submit" value="Logg ut">
 </form>
 
 <?php
-//Hvis det er melding fra annen php fil, så vises det og slettes fra session
 if (isset($_SESSION["message"])) {
     echo '<p>'.$_SESSION["message"].'</p>';
     unset($_SESSION["message"]);

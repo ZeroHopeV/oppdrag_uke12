@@ -1,5 +1,4 @@
 <?php
-//Henter inn filer for tilkobling og session
 require_once 'data_config/session.php';
 require_once 'data_config/conn.php';
 

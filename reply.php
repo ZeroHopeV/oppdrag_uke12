@@ -1,5 +1,4 @@
 <?php
-//Henter inn filer for tilkobling og session
 require_once 'data_config/session.php';
 require_once 'data_config/conn.php';
 
@@ -36,7 +35,6 @@ if (isset($_SESSION["admin"]) and $_SESSION["admin"] === true) {
 }
 ?>
 
-<!--Form-knapp for utlogging-->
 <form action="data_config/logout.php" method="post" class="user">
     <input type="submit" name="submit" value="Logg ut">
 </form>

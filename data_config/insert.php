@@ -1,11 +1,8 @@
 <?php
-//Henter inn fil for session
 require_once 'session.php';
 
-//Kjører for post-forespørsel
 if (isset($_POST["submit"])) {
     try {
-        //Henter inn fil for tilkobling
         require_once 'conn.php';
 
         $pre_query = "SELECT * FROM kategori WHERE ktgr_navn = :navn;";
@@ -27,10 +24,8 @@ if (isset($_POST["submit"])) {
         header("Location: ../main.php");
 
     } catch (PDOException $e) {
-        //Feilmelding
         die("Error: " . $e->getMessage());
     }
 } else {
-    //Sender tilbake til siden
     header("Location: ../main.php");
 }
