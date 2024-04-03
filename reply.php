@@ -28,6 +28,8 @@ $comp_stmt->execute();
 
 <a href="overview.php">Se oversikt</a>
 
+<p>Tilgjengelige saker ligger nederst</p>
+
 <?php
 if (isset($_SESSION["admin"]) and $_SESSION["admin"] === true) {
     echo '<a href="admin.php">Admin</a>';
