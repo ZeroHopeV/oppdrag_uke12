@@ -14,12 +14,15 @@ if (isset($_POST["submit"])) {
             header("Location: ../index.php");
         } else {
             $hash = password_hash($passord, PASSWORD_DEFAULT);
+            $null = 0;
 
-            $query = "INSERT INTO bruker (navn, epost, passord) VALUES (:navn, :epost, :passord);";
+            $query = "INSERT INTO bruker (navn, epost, passord, arbeider, admin) VALUES (:navn, :epost, :passord, :arbeider, :admin);";
             $stmt = $pdo->prepare($query);
             $stmt->bindParam(":navn", $_POST["navn"]);
             $stmt->bindParam(":epost", $_POST["epost"]);
             $stmt->bindParam(":passord", $hash);
+            $stmt->bindParam(":arbeider", $null);
+            $stmt->bindParam(":admin", $null);
             $stmt->execute();
 
             session_unset();
